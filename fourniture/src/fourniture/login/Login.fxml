@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="Login" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="363.0" prefWidth="464.0" style="-fx-background-color: #2A2E37;" styleClass="main-text" stylesheets="@../../tools/dark-theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fourniture.login.LoginController">
+   <children>
+      <JFXButton fx:id="loginbutton" alignment="CENTER" buttonType="RAISED" cacheHint="ROTATE" defaultButton="true" layoutX="178.0" layoutY="271.0" onAction="#LoadMain" prefHeight="35.0" prefWidth="135.0" ripplerFill="#113fd9" style="-fx-background-color: #4a705a;" text="Sign in" textFill="#f8f8f8" textOverrun="CLIP" />
+      <ImageView fitHeight="64.0" fitWidth="101.0" layoutX="192.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../tools/icons8_Password_96px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="35.0" layoutX="119.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../tools/icons8_Key_96px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="41.0" fitWidth="25.0" layoutX="119.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../tools/icons8_User_Location_96px.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="username" labelFloat="true" layoutX="159.0" layoutY="140.0" prefHeight="11.0" prefWidth="195.0" promptText="username" />
+      <JFXPasswordField fx:id="password" labelFloat="true" layoutX="160.0" layoutY="199.0" prefHeight="38.0" prefWidth="195.0" promptText="password" />
+      <JFXButton alignment="CENTER" buttonType="RAISED" cacheHint="ROTATE" layoutX="414.0" layoutY="7.0" onMouseClicked="#close" prefHeight="25.0" prefWidth="36.0" ripplerFill="#113fd9" style="-fx-background-color: #96281B;" text="X" textOverrun="CLIP" />
+   </children>
+</AnchorPane>

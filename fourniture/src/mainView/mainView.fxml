@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="Stack" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="1000.0" stylesheets="@../tools/dark-theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainViewController">
+   <children>
+      <BorderPane fx:id="Border" prefHeight="200.0" prefWidth="200.0">
+         <top>
+            <MenuBar fx:id="MenuBar" BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <center>
+            <JFXTabPane fx:id="tabPane" BorderPane.alignment="CENTER">
+               <tabs>
+                  <Tab text="Employé">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView layoutX="373.0" layoutY="29.0" prefHeight="395.0" prefWidth="491.0" AnchorPane.bottomAnchor="116.0" AnchorPane.leftAnchor="373.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="29.0">
+                                <columns>
+                                  <TableColumn prefWidth="196.0" text="Nom" />
+                                  <TableColumn prefWidth="179.0" text="Prenom" />
+                                    <TableColumn prefWidth="176.0" text="Departement" />
+                                </columns>
+                              </TableView>
+                              <ListView layoutX="13.0" layoutY="37.0" prefHeight="232.0" prefWidth="347.0" style="-fx-background-color: -fx-secondary;" />
+                              <HBox alignment="CENTER" layoutX="27.0" layoutY="468.0" prefHeight="63.0" prefWidth="360.0" spacing="20.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="27.0">
+                                 <children>
+                                    <JFXButton fx:id="addBtn" onAction="#addEmp" prefHeight="40.0" prefWidth="116.0" text="Add">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                    <JFXButton prefHeight="40.0" prefWidth="116.0" text="Delete">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                    <JFXButton prefHeight="40.0" prefWidth="116.0" text="Update">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab fx:id="RessTab" text="Ressource">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                  </Tab>
+                  <Tab fx:id="DepTab" text="Departement">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                  </Tab>
+               </tabs>
+            </JFXTabPane>
+         </center>
+         <right>
+            <VBox fx:id="VBoxLeft" prefHeight="600.0" prefWidth="136.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXHamburger fx:id="ham" focusTraversable="true" prefHeight="60.0" prefWidth="136.0">
+                     <styleClass>
+                        <String fx:value="jfx-hamburger-icon" />
+                        <String fx:value="drawer-button" />
+                     </styleClass></JFXHamburger>
+                  <JFXDrawer fx:id="drawer" direction="RIGHT" prefHeight="541.0" prefWidth="289.0" style="-fx-background-color: -fx-primary;" />
+               </children>
+            </VBox>
+         </right>
+      </BorderPane>
+   </children>
+</StackPane>
