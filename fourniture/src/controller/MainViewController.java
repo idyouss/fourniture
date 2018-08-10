@@ -6,30 +6,35 @@
 package controller;
 
 import FournitureUtil.Utility;
+import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXDrawer;
 import com.jfoenix.controls.JFXHamburger;
 import com.jfoenix.controls.JFXTabPane;
 import com.jfoenix.transitions.hamburger.HamburgerSlideCloseTransition;
+import fourniture.ConnexionClass;
+import fourniture.classes.Personne;
 import java.io.IOException;
 import java.net.URL;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.Tab;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
-import javafx.stage.Modality;
-import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 
 
 /**
@@ -38,25 +43,14 @@ import javafx.stage.StageStyle;
  * @author computer
  */
 public class MainViewController implements Initializable {
+    
+    ObservableList<Personne> list = FXCollections.observableArrayList();
 
-    @FXML
-    private StackPane Stack;
-    @FXML
-    private BorderPane Border;
-    @FXML
-    private MenuBar MenuBar;
-    @FXML
-    private VBox VBoxLeft;
     @FXML
     private JFXHamburger ham;
     @FXML
     private JFXDrawer drawer;
-    @FXML
-    private JFXTabPane tabPane;
-    @FXML
-    private Tab RessTab;
-    @FXML
-    private Tab DepTab;
+  
 
     /**
      * Initializes the controller class.
@@ -84,18 +78,11 @@ public class MainViewController implements Initializable {
         }
                        
     }    
-
-    @FXML
+    
     private void addEmp(ActionEvent event) throws IOException{
-        //Utility.loadWindow(getClass().getResource("/fourniture/addEpm/addEmp.fxml"), "Ajouter Nouveau Employe", null);
-       
         Utility ut = new Utility();
-        ut.loadWindow("/fourniture/addEmp/addEmp.fxml");
-        
-        
-        //Utility.loadWindow(getClass().getResource("/fourniture/addEpm/addEmp.fxml"), "Ajouter Nouveau Employe");
-        
-
-}
+        ut.loadWindow("/fourniture/addEmp/addEmp.fxml","Ajouter Employé");
+        }
+   
     
 }

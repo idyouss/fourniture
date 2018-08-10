@@ -9,16 +9,41 @@
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="541.0" prefWidth="130.0" stylesheets="@../tools/dark-theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DrawerBoxController">
    <children>
-      <JFXButton prefHeight="112.0" prefWidth="144.0" text="Employé">
+      <JFXButton focusTraversable="false" onAction="#addEmp" prefHeight="68.0" prefWidth="130.0" text="Ajouter&#10;Personnel" textAlignment="CENTER">
          <font>
             <Font size="10.0" />
          </font></JFXButton>
-      <JFXButton prefHeight="112.0" prefWidth="143.0" text="Ressource">
+      <JFXButton focusTraversable="false" onAction="#addCat" prefHeight="68.0" prefWidth="130.0" text="Ajouter&#10;Categorie" textAlignment="CENTER">
          <font>
             <Font size="10.0" />
          </font>
       </JFXButton>
-      <JFXButton prefHeight="112.0" prefWidth="157.0" text="Fournisseur">
+      <JFXButton focusTraversable="false" onAction="#addFrs" prefHeight="68.0" prefWidth="130.0" text="Ajouter&#10;Fournisseur" textAlignment="CENTER">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </JFXButton>
+      <JFXButton focusTraversable="false" prefHeight="68.0" prefWidth="130.0" text="Ajouter&#10;Ressource" textAlignment="CENTER">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </JFXButton>
+      <JFXButton focusTraversable="false" onAction="#ListEmp" prefHeight="68.0" prefWidth="130.0" text="List&#10;Personnel" textAlignment="CENTER">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </JFXButton>
+      <JFXButton focusTraversable="false" onAction="#ListCat" prefHeight="68.0" prefWidth="130.0" text="List&#10;Categorie" textAlignment="CENTER">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </JFXButton>
+      <JFXButton focusTraversable="false" prefHeight="68.0" prefWidth="130.0" text="List&#10;Ressource" textAlignment="CENTER">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </JFXButton>
+      <JFXButton focusTraversable="false" onAction="#ListFrs" prefHeight="68.0" prefWidth="130.0" text="List&#10;Fournisseur" textAlignment="CENTER">
          <font>
             <Font size="10.0" />
          </font>

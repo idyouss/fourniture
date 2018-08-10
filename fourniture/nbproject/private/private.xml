@@ -3,11 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/computer/Desktop/fourniture/fourniture/src/fourniture/addEmp/addEmp.fxml</file>
-            <file>file:/C:/Users/computer/Desktop/fourniture/fourniture/src/AlertMaker/AlertMaker.java</file>
-            <file>file:/C:/Users/computer/Desktop/fourniture/fourniture/src/fourniture/Fourniture.java</file>
-            <file>file:/C:/Users/computer/Desktop/fourniture/fourniture/src/fourniture/addEmp/AddEmpController.java</file>
-            <file>file:/C:/Users/computer/Desktop/fourniture/fourniture/src/fourniture/ConnexionClass.java</file>
+            <file>file:/C:/Users/computer/Desktop/fournitureGit/fourniture/fourniture/src/fourniture/addType/ListTypeRess.fxml</file>
+            <file>file:/C:/Users/computer/Desktop/fournitureGit/fourniture/fourniture/src/fourniture/addType/updateType.fxml</file>
+            <file>file:/C:/Users/computer/Desktop/fournitureGit/fourniture/fourniture/src/fourniture/addEmp/ListEmpController.java</file>
+            <file>file:/C:/Users/computer/Desktop/fournitureGit/fourniture/fourniture/src/fourniture/classes/TypeRessource.java</file>
+            <file>file:/C:/Users/computer/Desktop/fournitureGit/fourniture/fourniture/src/fourniture/Dao.java</file>
+            <file>file:/C:/Users/computer/Desktop/fournitureGit/fourniture/fourniture/src/fourniture/addType/ListTypeRessController.java</file>
+            <file>file:/C:/Users/computer/Desktop/fournitureGit/fourniture/fourniture/src/FournitureUtil/Utility.java</file>
         </group>
     </open-files>
 </project-private>

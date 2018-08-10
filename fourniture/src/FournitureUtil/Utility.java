@@ -4,18 +4,13 @@
  * and open the template in the editor.
  */
 package FournitureUtil;
-
-import controller.MainViewController;
+import javafx.scene.image.Image;
 import java.io.IOException;
-import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.image.Image;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -25,21 +20,25 @@ import javafx.stage.StageStyle;
  * @author computer
  */
 public class Utility {
-   // public static final String ICON_IMAGE_LOC = "lien icon";
+    public static final String ICON_IMAGE_LOC = "lien icon";
     private static final SimpleDateFormat DATE_TIME_FORMAT = new SimpleDateFormat("dd-MM-yyyy hh:mm:ss a");
     private static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("dd-MM-yyyy");
     
     // methode ajout icon
-    /*
-    public static void setStageIcon(Stage stage) {
+    
+   /* public static void setStageIcon(Stage stage) {
         stage.getIcons().add(new Image(ICON_IMAGE_LOC));
-    }
-    */
-    public void loadWindow(String loc) throws IOException {
+    }*/
+    
+    public void loadWindow(String loc,String title) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(loc));
         Parent root1 = (Parent) fxmlLoader.load();
         Stage stage = new Stage();
-        stage.setScene(new Scene(root1));  
+        stage.setScene(new Scene(root1)); 
+        stage.initStyle(StageStyle.UTILITY);
+        stage.setResizable(false);
+        stage.setTitle(title);
+        stage.initModality(Modality.APPLICATION_MODAL);
         stage.show();
         
         /*

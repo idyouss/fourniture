@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="stack" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../tools/dark-theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fourniture.addType.AddTypeController">
+   <children>
+      <VBox fx:id="anchor" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label styleClass="main-text" text="Categories Ressources" textFill="#ffff8d" underline="true">
+               <VBox.margin>
+                  <Insets left="190.0" right="80.0" top="40.0" />
+               </VBox.margin>
+            </Label>
+            <JFXTextField fx:id="idCat" labelFloat="true" promptText="ID Ressource">
+               <VBox.margin>
+                  <Insets left="40.0" right="40.0" top="60.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="nomCat" labelFloat="true" promptText="Nom Ressource">
+               <VBox.margin>
+                  <Insets left="40.0" right="40.0" top="40.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <VBox.margin>
+                  <Insets left="40.0" right="40.0" top="40.0" />
+               </VBox.margin>
+               <children>
+                  <JFXButton fx:id="addCat" onAction="#addCategorie" text="Valider" />
+                  <Region prefHeight="200.0" prefWidth="200.0" />
+                  <JFXButton fx:id="resetCat" onAction="#clearEntries" text="Annuler" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

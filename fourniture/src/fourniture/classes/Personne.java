@@ -12,19 +12,23 @@ package fourniture.classes;
  * @author computer
  */
 public class Personne {
-    int id;
+    String id;
     String nom;
     String prenom;
-    int idDep;
+    String sexe;
 
-    public Personne(int id, String nom, String prenom, int idDep) {
+    public Personne(String id, String nom, String prenom, String sexe) {
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
-        this.idDep = idDep;
+        this.sexe = sexe;
     }
 
-    public int getId() {
+    public Personne(int i, String n, String p, int s) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public String getId() {
         return id;
     }
 
@@ -36,11 +40,11 @@ public class Personne {
         return prenom;
     }
 
-    public int getIdDep() {
-        return idDep;
+    public String getSexe() {
+        return sexe;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -52,13 +56,15 @@ public class Personne {
         this.prenom = prenom;
     }
 
-    public void setIdDep(int idDep) {
-        this.idDep = idDep;
+    public void setSexe(String sexe) {
+        this.sexe = sexe;
     }
 
     @Override
     public String toString() {
-        return "personne{" + "id=" + id + ", nom=" + nom + ", prenom=" + prenom + ", idDep=" + idDep + '}';
+        return "Personne{" + "id=" + id + ", nom=" + nom + ", prenom=" + prenom + ", sexe=" + sexe + '}';
     }
+
+    
     
 }

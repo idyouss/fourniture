@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="CatViewList" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="787.0" stylesheets="@../../tools/dark-theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fourniture.addType.ListTypeRessController">
+   <children>
+      <VBox prefHeight="490.0" prefWidth="765.0">
+         <children>
+            <ToolBar prefHeight="67.0" prefWidth="787.0" style="-fx-background-color: -fx-primary;">
+              <items>
+                <Button fx:id="pdf" focusTraversable="false" mnemonicParsing="false" text="Export PDF" />
+              </items>
+            </ToolBar>
+            <TableView fx:id="ListCatView" prefHeight="556.0" prefWidth="787.0">
+              <columns>
+                <TableColumn fx:id="idCat" prefWidth="124.0" text="ID" />
+                <TableColumn fx:id="typeCat" prefWidth="661.0" text="Categorie" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+               <contextMenu>
+                  <ContextMenu styleClass="table-context">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#handleCategorieDeleteOption" text="Supprimer" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleCatEditOption" text="Modifier" />
+                        <MenuItem mnemonicParsing="false" onAction="#loadData" text="Actualiser" />
+                    </items>
+                  </ContextMenu>
+               </contextMenu>
+            </TableView>
+         </children>
+         <StackPane.margin>
+            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+         </StackPane.margin>
+      </VBox>
+   </children>
+</StackPane>

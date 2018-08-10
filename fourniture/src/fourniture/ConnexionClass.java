@@ -4,12 +4,14 @@ package fourniture;
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.HashSet;
 import java.util.Set;
 import javax.swing.JOptionPane;
+import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -41,7 +43,7 @@ public final class ConnexionClass {
     private static void createConnection() {
         try {
             Class.forName("org.apache.derby.jdbc.EmbeddedDriver").newInstance();
-            connection = DriverManager.getConnection("jdbc:derby://localhost:1527/fourniture" , "root" , " ");
+            connection = DriverManager.getConnection("jdbc:derby://localhost:1527/fourniture" , "APP" , " ");
         }
         catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Cant load database", "Database Error", JOptionPane.ERROR_MESSAGE);
@@ -86,4 +88,6 @@ public final class ConnexionClass {
         System.out.println("daiza");
         return connection;
     }
+    
+   
 }

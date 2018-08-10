@@ -8,10 +8,9 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="fourniture.jar" size="709029" download="eager" />
+    <jar href="fourniture.jar" size="738786" download="eager" />
     <jar href="lib\derby.jar" size="3232770" download="eager" />
     <jar href="lib\derbyclient.jar" size="588394" download="eager" />
-    <jar href="lib\fontawesomefx-commons-8.15.jar" size="20957" download="eager" />
     <jar href="lib\fontawesomefx-fontawesome-4.7.0-5.jar" size="136891" download="eager" />
     <jar href="lib\jfoenix-8.0.5.jar" size="2657082" download="eager" />
     <jar href="lib\log4j-api-2.11.0.jar" size="263109" download="eager" />

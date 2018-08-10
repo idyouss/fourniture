@@ -5,23 +5,51 @@
  */
 package controller;
 
+import FournitureUtil.Utility;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
-/**
- * FXML Controller class
- *
- * @author computer
- */
 public class DrawerBoxController implements Initializable {
 
-    /**
-     * Initializes the controller class.
-     */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        
     }    
+    @FXML
+    private void addEmp(ActionEvent event) throws IOException{
+        
+        Utility ut = new Utility();
+        ut.loadWindow("/fourniture/addEmp/addEmp.fxml","Ajouter Personnel");
+        }
+    @FXML
+    private void ListEmp(ActionEvent event) throws IOException{
+        Utility ut = new Utility();
+        ut.loadWindow("/fourniture/addEmp/ListEmp.fxml","Liste Personnel");
+        }
+    @FXML
+    private void addCat(ActionEvent event) throws IOException{
+        Utility ut = new Utility();
+        ut.loadWindow("/fourniture/addType/addType.fxml", "Ajouter Catégorie");
+    }
+    @FXML
+    private void ListCat(ActionEvent event) throws IOException{
+        Utility ut = new Utility();
+        ut.loadWindow("/fourniture/addType/ListTypeRess.fxml", "Liste Catégorie");
+    }
     
+    @FXML
+    private void addFrs(ActionEvent event) throws IOException{
+        Utility ut = new Utility();
+        ut.loadWindow("/fourniture/addFournisseur/addFrs.fxml", "Ajouter Fournisseur");
+    }
+    
+    @FXML
+    private void ListFrs(ActionEvent event) throws IOException{
+        Utility ut = new Utility();
+        ut.loadWindow("/fourniture/addFournisseur/ListFrs.fxml", "Liste Fournisseur");
+    }
 }

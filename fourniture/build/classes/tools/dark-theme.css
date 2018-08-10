@@ -115,6 +115,13 @@
     -fx-text-alignment: center;
 }
 
+.date-color
+{
+    -fx-fill: #000000;
+    -fx-font-size: 14pt;
+    -fx-text-alignment: center;
+    -fx-control-inner-background: #000000 ;
+}
 .submission-container{
     -fx-background-color: derive(-fx-primary, 10%);
 }

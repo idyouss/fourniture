@@ -12,19 +12,19 @@ package fourniture.classes;
  * @author computer
  */
 public class Fournisseur {
-    int id;
+    String id;
     String nom;
     String prenom;
     String tel;
 
-    public Fournisseur(int id, String nom, String prenom, String tel) {
+    public Fournisseur(String id, String nom, String prenom, String tel) {
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
         this.tel = tel;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
@@ -40,7 +40,7 @@ public class Fournisseur {
         return tel;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
